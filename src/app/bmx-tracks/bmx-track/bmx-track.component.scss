@@ -1,0 +1,14 @@
+:host {
+  flex: 0 1 400px;
+  margin: 10px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+
+.spacer {
+  flex-grow: 1;
+}

@@ -1,1 +1,30 @@
+.nav-title {
+  color: white;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  margin: 4rem 2rem;
+  text-transform: uppercase;
+}
 
+.main-menu {
+  display: flex;
+  height: 100%;
+  margin-left: auto;
+
+  a {
+    border-bottom: 5px solid transparent;
+    color: white;
+    display: flex;
+      align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    transition: all ease-in-out .2s;
+
+    &:hover {
+      background: white;
+      border-bottom: 5px solid #008FC1;
+      color: #008FC1;
+    }
+  }
+}

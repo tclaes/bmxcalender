@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {Router, RouterModule, Routes} from '@angular/router';
 
-import { BmxTrackComponent } from './bmx-tracks/bmx-track/bmx-track.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule, MatToolbarModule} from '@angular/material';
 import { BmxNavbarHeaderComponent } from './bmx-navbar-header/bmx-navbar-header.component';
@@ -18,6 +17,7 @@ import { BmxTrackListComponent } from './bmx-tracks/bmx-track-list/bmx-track-lis
 import { CalendarComponent } from './calendar/calendar.component';
 import { RaceListComponent } from './competion/race-list/race-list.component';
 import { RaceComponent } from './competion/race/race.component';
+import {BmxTrackDetailsComponent} from './bmx-tracks/bmx-track-details/bmx-track-details.component';
 
 const appRoutes: Routes = [
   { path: 'bmx-tracks', component: BmxTrackListComponent },
@@ -28,7 +28,7 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    BmxTrackComponent,
+    BmxTrackDetailsComponent,
     BmxNavbarHeaderComponent,
     NavBarComponent,
     BmxTrackListComponent,

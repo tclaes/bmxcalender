@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BmxTrackComponent } from './bmx-track.component';
+import { BmxTrackDetailsComponent } from './bmx-track-details.component';
 
 describe('BmxTrackComponent', () => {
-  let component: BmxTrackComponent;
-  let fixture: ComponentFixture<BmxTrackComponent>;
+  let component: BmxTrackDetailsComponent;
+  let fixture: ComponentFixture<BmxTrackDetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BmxTrackComponent ]
+      declarations: [ BmxTrackDetailsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BmxTrackComponent);
+    fixture = TestBed.createComponent(BmxTrackDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

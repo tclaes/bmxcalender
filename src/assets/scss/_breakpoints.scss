@@ -1,0 +1,31 @@
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+) !default;
+
+@mixin breakpoint-mobile() {
+  @media (min-width: map_get($breakpoints, "medium")) {
+    @content
+  }
+}
+
+@mixin breakpoint-tablet() {
+  @media (min-width: map_get($breakpoints, "large")) {
+    @content
+  }
+}
+
+@mixin breakpoint-full-hd() {
+  @media (min-width: map_get($breakpoints, "xlarge")) {
+    @content
+  }
+}
+
+@mixin breakpoint-4k() {
+  @media (min-width: map_get($breakpoints, "xxlarge")) {
+    @content
+  }
+}

@@ -1,9 +1,17 @@
+@import "variables";
+@import "breakpoints";
+
 .nav-title {
-  color: white;
+  color: $white;
   font-weight: bolder;
-  font-size: 2.4rem;
-  margin: 4rem 2rem;
+  font-size: $h2-mobile;
+  margin: 2rem 2rem 2rem 0;
   text-transform: uppercase;
+
+  @include breakpoint-tablet {
+    font-size: $h2;
+    margin: 4rem 2rem;
+  }
 }
 
 .main-menu {
@@ -13,7 +21,7 @@
 
   a {
     border-bottom: 5px solid transparent;
-    color: white;
+    color: $white;
     display: flex;
       align-items: center;
     height: 100%;
@@ -23,8 +31,8 @@
 
     &:hover {
       background: white;
-      border-bottom: 5px solid #008FC1;
-      color: #008FC1;
+      border-bottom: 5px solid $blue;
+      color: $blue;
     }
   }
 }
